@@ -21,10 +21,10 @@ target/
 #/5.OnlineInternship/
 #/8.Games/
 /out/
-#/JavaRushPlugin.properties
-/Instruction.png
-/out.log
-/out.log.*
+JavaRushPlugin.properties
+Instruction.png
+out.log
+out.log.*
 /javafx-sdk-11.0.2/
 /ForTest/
 /MyTestWork/
