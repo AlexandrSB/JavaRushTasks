@@ -30,7 +30,7 @@ JavaRushTasks.iml
 Instruction.png
 out.log
 out.log.*
-file1.txt
+/file1.txt
 file2.txt
 Leela.html
 ome similarities to the ideas behind the original EJB spec and what is being done with Microservices, there are many differences.
