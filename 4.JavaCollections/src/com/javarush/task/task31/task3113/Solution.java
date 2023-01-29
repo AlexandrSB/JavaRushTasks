@@ -15,14 +15,25 @@ import java.util.concurrent.atomic.AtomicLong;
 public class Solution {
 
     public static void main(String[] args) throws IOException {
-        Path pathToDir = Paths.get(args[0]);
-//        Files file = new Files(pathToDir);
+
+        SearchFileVisitor fileVisitor = new SearchFileVisitor();
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String dirName = reader.readLine();
+        reader.close();
+
+        Path pathToDir = Paths.get(dirName);
 
         if (!Files.isDirectory(pathToDir)) {
             System.out.println(pathToDir.toAbsolutePath() + " - не папка");
             return;
         }
 
+        Files.walkFileTree(pathToDir, fileVisitor);
 
+        int countFolders = fileVisitor.getFoundDirectories().size() - 1;
+
+        System.out.println("Всего папок - " + countFolders);
+        System.out.println("Всего файлов - " + fileVisitor.getFoundFiles().size());
+        System.out.println("Общий размер - " + fileVisitor.getContentSize());
     }
 }

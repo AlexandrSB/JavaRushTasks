@@ -21,11 +21,14 @@ target/
 #/5.OnlineInternship/
 #/8.Games/
 /out/
-#/JavaRushPlugin.properties
+/JavaRushPlugin.properties
 /Instruction.png
 /out.log
 /out.log.*
-/ForTest
+/javafx-sdk-11.0.2/
+/ForTest/
+/MyTestWork/
+/JavaRushTasks/
 file1.txt
 file2.txt
 Leela.html
