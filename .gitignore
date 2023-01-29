@@ -29,3 +29,5 @@ target/
 file1.txt
 file2.txt
 Leela.html
+ome similarities to the ideas behind the original EJB spec and what is being done with Microservices, there are many differences.
+orciMehthtiWvice pattern, transaction management is simplified by minimizing your the scope and never having transactions cross Microservice boundaries.
